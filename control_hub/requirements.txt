@@ -1,0 +1,6 @@
+PyQt6>=6.5
+pyqtgraph>=0.13.3
+numpy>=1.24
+pythonnet>=3.0.3     # only needed for the real Delsys source (AeroPy / DelsysAPI.dll)
+pysdl2>=0.9.15
+pysdl2-dll>=2.26.0  # SDL2 library (wheel force feedback)

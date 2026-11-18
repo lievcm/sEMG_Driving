@@ -1,0 +1,58 @@
+{
+  "delsys": {
+    "source": "delsys",
+    "key": "",
+    "license": "",
+    "api_dll_dir": "resources/DelsysAPI/resources",
+    "pythonnet_runtime": "coreclr",
+    "sensor_map": {
+      "L_biceps": 1,
+      "L_triceps": 2,
+      "L_brachioradialis": 3,
+      "R_biceps": 4,
+      "R_triceps": 5,
+      "R_brachioradialis": 6
+    },
+    "emg_channel_type": "EMG",
+    "sample_rate_override_hz": 0.0,
+    "configure_timeout_s": 10.0,
+    "poll_interval_ms": 1.0
+  },
+  "band_power": {
+    "window_s": 0.2,
+    "step_s": 0.01,
+    "f_low": 20.0,
+    "f_high": 450.0,
+    "avg_window_s": 0.1,
+    "metric": "power"
+  },
+  "steering": {
+    "lock_to_lock_deg": 900.0
+  },
+  "wheel": {
+    "device_index": -1,
+    "axis": 0,
+    "wheel_range_deg": 900.0,
+    "max_target_deg": 90.0,
+    "max_slew_deg_per_s": 180.0,
+    "max_accel_deg_per_s2": 360.0,
+    "max_force_pct": 30.0,
+    "kp": 400.0,
+    "kd": 200.0,
+    "safety_max_error_deg": 90.0,
+    "loop_hz": 100.0,
+    "target_timeout_s": 0.5
+  },
+  "network": {
+    "protocol": "tcp",
+    "host": "127.0.0.1",
+    "port": 5005,
+    "send_hz": 100.0,
+    "connect_timeout_s": 3.0,
+    "reconnect_interval_s": 2.0
+  },
+  "gui": {
+    "history_s": 10.0,
+    "refresh_hz": 30.0
+  }
+}
